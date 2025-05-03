@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 30, 27, 23;
+  --background-rgb: 255, 249, 219;
+  
+  --primary: 250, 204, 21;
+  --primary-foreground: 30, 27, 23;
+  
+  --secondary: 245, 158, 11;
+  --secondary-foreground: 255, 255, 255;
+  
+  --accent: 249, 115, 22;
+  --accent-foreground: 255, 255, 255;
+  
+  --muted: 241, 245, 249;
+  --muted-foreground: 107, 114, 128;
+  
+  --card: 255, 255, 255;
+  --card-foreground: 30, 27, 23;
+  
+  --popover: 255, 255, 255;
+  --popover-foreground: 30, 27, 23;
+  
+  --border: 229, 231, 235;
+  --input: 229, 231, 235;
+  
+  --radius: 0.5rem;
+  
+  --font-sans: var(--font-poppins);
+  --font-heading: var(--font-poppins);
+}
+
+.dark {
+  --foreground-rgb: 255, 249, 219;
+  --background-rgb: 30, 27, 23;
+  
+  --primary: 234, 179, 8;
+  --primary-foreground: 255, 255, 255;
+  
+  --secondary: 217, 119, 6;
+  --secondary-foreground: 255, 255, 255;
+  
+  --accent: 234, 88, 12;
+  --accent-foreground: 255, 255, 255;
+  
+  --muted: 31, 41, 55;
+  --muted-foreground: 156, 163, 175;
+  
+  --card: 31, 41, 55;
+  --card-foreground: 255, 249, 219;
+  
+  --popover: 31, 41, 55;
+  --popover-foreground: 255, 249, 219;
+  
+  --border: 55, 65, 81;
+  --input: 55, 65, 81;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-medium;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading font-semibold;
+  }
+}
+
+.gradient-bg {
+  @apply bg-gradient-to-r from-yellow-400 via-amber-500 to-orange-500;
+}
+
+.gradient-text {
+  @apply text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-amber-500 to-orange-500;
+}
+
+.service-card {
+  @apply hover:shadow-xl transition-all duration-300 hover:-translate-y-1;
+}
+
+.timeline-item:not(:last-child)::after {
+  content: '';
+  @apply absolute top-6 left-6 h-full w-0.5 bg-gradient-to-b from-yellow-400 via-amber-500 to-orange-500 -z-10;
+}
