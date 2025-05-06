@@ -42,7 +42,7 @@ const Header = () => {
       <div className="container flex items-center justify-between">
         <Link
           href="/"
-          className="text-xl font-heading font-bold gradient-text"
+          className="text-xl font-heading font-bold bg-gradient-to-br from-[#3b82f6] bg-clip-text text-transparent"
           onClick={closeMenu}
         >
           Ibrahim A.

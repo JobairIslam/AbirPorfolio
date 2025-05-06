@@ -47,7 +47,9 @@ const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center pt-20">
       {/* Gradient background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-indigo-600/5 via-purple-600/5 to-cyan-500/5 dark:from-indigo-950/30 dark:via-purple-950/30 dark:to-cyan-950/30" />
+      <div className="absolute inset-0 bg-gradient-to-br from-[#0fb3ad]/30 to-white
+
+ dark:from-indigo-950/30 dark:via-purple-950/30 dark:to-cyan-950/30" />
       
       <div className="container mx-auto px-4 py-12 relative z-10">
         <motion.div
@@ -57,13 +59,13 @@ const Hero = () => {
           animate="show"
         >
           <motion.div variants={item} className="mb-4">
-            <motion.h1
+          <motion.h1
               className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 tracking-tight"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              Hi, I'm <span className="gradient-text">Ibrahim A.</span>
+              Hi, I'm <span className="bg-gradient-to-br from-[#3b82f6] bg-clip-text text-transparent">Ibrahim Abir</span>
             </motion.h1>
           </motion.div>
 
@@ -86,7 +88,11 @@ const Hero = () => {
             variants={item}
             className="flex flex-col sm:flex-row gap-4 justify-center mb-12"
           >
-            <Button asChild size="lg" className="gradient-bg">
+                        <Button
+              asChild
+              size="lg"
+              className="bg-gradient-to-br from-[#3b82f6] to-[#0fb3ad] text-white border-0 shadow-lg hover:from-[#2563eb] hover:to-[#0ea5e9]"
+            >
               <Link href="#contact">Hire Me</Link>
             </Button>
             <Button variant="outline" size="lg">
