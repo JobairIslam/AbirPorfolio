@@ -92,7 +92,7 @@ const Hero = () => {
               size="lg"
               className="bg-gradient-to-br from-[#3b82f6] to-[#0fb3ad] text-white border-0 shadow-lg hover:from-[#2563eb] hover:to-[#0ea5e9]"
             >
-              <Link href="#contact">Hire Me</Link>
+              <Link href="https://www.upwork.com/freelancers/~011e1032a37f841633?mp_source=share" target="_blank">Hire Me</Link>
             </Button>
             <Button variant="outline" size="lg">
               <Download className="mr-2 h-4 w-4" /> Download Resume
