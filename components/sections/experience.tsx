@@ -77,7 +77,7 @@ const Experience = () => {
   return (
     <section id="experience" className="py-20 bg-gradient-to-br from-[#0fb3ad]/30 to-white
 
-">
+dark:from-gray-800 dark:to-gray-700">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-2xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-2">

@@ -47,9 +47,8 @@ const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center pt-20">
       {/* Gradient background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#0fb3ad]/30 to-white
-
- dark:from-indigo-950/30 dark:via-purple-950/30 dark:to-cyan-950/30" />
+      <div className="absolute inset-0 bg-gradient-to-br from-[#0fb3ad]/30 to-white dark:hidden" />
+      <div className="absolute inset-0 hidden dark:block bg-gradient-to-br dark:from-indigo-950/30 dark:via-purple-950/30 dark:to-cyan-950/30" />
       
       <div className="container mx-auto px-4 py-12 relative z-10">
         <motion.div

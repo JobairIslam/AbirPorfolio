@@ -86,7 +86,7 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="py-20 bg-gradient-to-br from-[#0fb3ad]/30 to-white
+    <section id="contact" className="py-20 bg-gradient-to-br from-[#0fb3ad]/30 to-white dark:from-gray-800 dark:to-gray-700
 
 ">
       <div className="container mx-auto px-4">
