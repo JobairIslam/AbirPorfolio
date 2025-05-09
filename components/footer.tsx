@@ -12,12 +12,13 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
   
   const socialLinks = [
-    { icon: <LinkedinIcon className="h-5 w-5" />, href: "#", label: "LinkedIn" },
-    { icon: <InstagramIcon className="h-5 w-5" />, href: "#", label: "Instagram" },
-    { icon: <TwitterIcon className="h-5 w-5" />, href: "#", label: "Twitter" },
-    { icon: <YoutubeIcon className="h-5 w-5" />, href: "#", label: "YouTube" },
-    { icon: <FacebookIcon className="h-5 w-5" />, href: "#", label: "Facebook" },
+    { icon: <LinkedinIcon className="h-5 w-5" />, label: "LinkedIn", href: "https://www.linkedin.com/in/ibrahim-abir-527537269/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
+    { icon: <InstagramIcon className="h-5 w-5" />, label: "Instagram", href: "https://www.instagram.com/ibrahimabir_?igsh=MTUxbm1leHExbTVvMQ%3D%3D" },
+    // { icon: <TwitterIcon className="h-5 w-5" />, label: "Twitter", href: "#" },
+    // { icon: <YoutubeIcon className="h-5 w-5" />, label: "YouTube", href: "#" },
+    { icon: <FacebookIcon className="h-5 w-5" />, label: "Facebook", href: "https://www.facebook.com/profile.php?id=61560913217868" },
   ];
+
 
   const quickLinks = [
     { href: "#about", label: "About" },
@@ -32,7 +33,7 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           <div>
-            <h3 className="text-xl font-bold gradient-text mb-4">Ibrahim A.</h3>
+            <h3 className="text-xl font-bold text-xl font-heading font-bold bg-gradient-to-br from-[#3b82f6] bg-clip-text text-transparent mb-4">Ibrahim A.</h3>
             <p className="text-muted-foreground mb-4">
               Social Media Manager & Content Strategy Specialist helping businesses
               grow their online presence through effective digital marketing strategies.
@@ -66,7 +67,12 @@ const Footer = () => {
                   asChild
                   className="rounded-full"
                 >
-                  <Link href={link.href} aria-label={link.label}>
+                  <Link 
+                    href={link.href} 
+                    aria-label={link.label}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     {link.icon}
                   </Link>
                 </Button>

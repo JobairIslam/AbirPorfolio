@@ -3,7 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { ArrowDown, Download, Linkedin, Instagram, Twitter } from "lucide-react";
+import { ArrowDown, Download, Linkedin, Instagram, Facebook } from "lucide-react";
 
 const Hero = () => {
   const container = {
@@ -39,9 +39,9 @@ const Hero = () => {
   };
 
   const socialLinks = [
-    { icon: <Linkedin className="h-5 w-5" />, href: "#", label: "LinkedIn" },
-    { icon: <Instagram className="h-5 w-5" />, href: "#", label: "Instagram" },
-    { icon: <Twitter className="h-5 w-5" />, href: "#", label: "Twitter" },
+    { icon: <Linkedin className="h-5 w-5" />, href: "https://www.linkedin.com/in/ibrahim-abir-527537269/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app", label: "LinkedIn" },
+    { icon: <Instagram className="h-5 w-5" />, href: "https://www.instagram.com/ibrahimabir_?igsh=MTUxbm1leHExbTVvMQ%3D%3D", label: "Instagram" },
+    { icon: <Facebook className="h-5 w-5" />, href: "https://www.facebook.com/profile.php?id=61560913217868", label: "Facebook" },
   ];
 
   return (
@@ -114,7 +114,7 @@ const Hero = () => {
                   asChild
                   className="rounded-full"
                 >
-                  <Link href={link.href} aria-label={link.label}>
+                  <Link href={link.href} aria-label={link.label} target="_blank" rel="noopener noreferrer">
                     {link.icon}
                   </Link>
                 </Button>

@@ -63,7 +63,7 @@ const Tools = () => {
       <div className="container mx-auto px-4">
         <div className="text-center max-w-2xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-2">
-            Tools & <span className="gradient-text">Platforms</span>
+            Tools & <span className="bg-gradient-to-br from-[#3b82f6] bg-clip-text text-transparent">Platforms</span>
           </h2>
           <p className="text-muted-foreground">
             The professional tools I use to deliver exceptional results

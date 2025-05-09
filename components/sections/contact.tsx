@@ -78,11 +78,11 @@ const Contact = () => {
   }
 
   const socialLinks = [
-    { icon: <LinkedinIcon className="h-5 w-5" />, label: "LinkedIn", href: "#" },
-    { icon: <InstagramIcon className="h-5 w-5" />, label: "Instagram", href: "#" },
-    { icon: <TwitterIcon className="h-5 w-5" />, label: "Twitter", href: "#" },
-    { icon: <YoutubeIcon className="h-5 w-5" />, label: "YouTube", href: "#" },
-    { icon: <FacebookIcon className="h-5 w-5" />, label: "Facebook", href: "#" },
+    { icon: <LinkedinIcon className="h-5 w-5" />, label: "LinkedIn", href: "https://www.linkedin.com/in/ibrahim-abir-527537269/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
+    { icon: <InstagramIcon className="h-5 w-5" />, label: "Instagram", href: "https://www.instagram.com/ibrahimabir_?igsh=MTUxbm1leHExbTVvMQ%3D%3D" },
+    // { icon: <TwitterIcon className="h-5 w-5" />, label: "Twitter", href: "#" },
+    // { icon: <YoutubeIcon className="h-5 w-5" />, label: "YouTube", href: "#" },
+    { icon: <FacebookIcon className="h-5 w-5" />, label: "Facebook", href: "https://www.facebook.com/profile.php?id=61560913217868" },
   ];
 
   return (
@@ -92,7 +92,7 @@ const Contact = () => {
       <div className="container mx-auto px-4">
         <div className="text-center max-w-2xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-2">
-            Get In <span className="gradient-text">Touch</span>
+            Get In <span className="bg-gradient-to-br from-[#3b82f6] bg-clip-text text-transparent">Touch</span>
           </h2>
           <p className="text-muted-foreground">
             Ready to elevate your social media presence? Let's chat!
@@ -129,7 +129,7 @@ const Contact = () => {
                       asChild
                       className="rounded-full"
                     >
-                      <a href={link.href} target="_blank" rel="noopener noreferrer" aria-label={link.label}>
+                      <a href={link.href} target="_blank" rel="noopener noreferrer"  aria-label={link.label}>
                         {link.icon}
                       </a>
                     </Button>
@@ -217,7 +217,7 @@ const Contact = () => {
                   
                   <Button 
                     type="submit" 
-                    className="w-full gradient-bg"
+                    className="w-full bg-gradient-to-br from-[#3b82f6] to-[#0fb3ad] text-white border-0 shadow-lg hover:from-[#2563eb] hover:to-[#0ea5e9]"
                     disabled={isSubmitting}
                   >
                     {isSubmitting ? "Sending..." : "Let's Work Together"}

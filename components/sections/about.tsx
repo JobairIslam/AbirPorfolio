@@ -9,7 +9,7 @@ const About = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-2 text-center">
-            About <span className="gradient-text">Me</span>
+            About <span className="bg-gradient-to-br from-[#3b82f6] bg-clip-text text-transparent ">Me</span>
           </h2>
           <p className="text-muted-foreground text-center mb-12">
             Digital Marketing Professional
@@ -20,7 +20,7 @@ const About = () => {
               <Card className="border-none shadow-lg overflow-hidden">
                 <CardContent className="p-0">
                   <Image
-                    src="https://images.pexels.com/photos/3760618/pexels-photo-3760618.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                    src="/img/abir.jpg"
                     alt="Ibrahim A."
                     width={600}
                     height={800}

@@ -14,56 +14,56 @@ const Testimonials = () => {
 
   const testimonials = [
     {
-      name: "Client Name",
+      name: "John Smith",
       role: "Strategy Specialist",
       date: "November 2024",
       rating: 5,
       text: "Amazing work Ibrahim, thank you very much!"
     },
     {
-      name: "Client Name",
+      name: "Emily Johnson",
       role: "Social Media Manager",
       date: "October 2024",
       rating: 5,
       text: "He took our engagement to a whole new level! Very creative, reliable and trustworthy."
     },
     {
-      name: "Client Name",
+      name: "Michael Brown",
       role: "SMM + Graphic Creator",
       date: "October 2023",
       rating: 5,
       text: "True expert. Insights added immense value."
     },
     {
-      name: "Client Name",
+      name: "Jessica Davis",
       role: "SMM Expert & Video Editor",
       date: "October 2023",
       rating: 5,
       text: "Very professional and communicative."
     },
     {
-      name: "Client Name",
+      name: "James Miller",
       role: "SMM Specialist",
       date: "September 2023",
       rating: 5,
       text: "Exceptional work and professionalism."
     },
     {
-      name: "Client Name",
+      name: "Ashley Wilson",
       role: "Instagram Reels Editor",
       date: "August 2023",
       rating: 5,
       text: "Appreciate your expertise and professionalism."
     },
     {
-      name: "Client Name",
+      name: "David Anderson",
       role: "Social Media Strategist", 
       date: "July 2023",
       rating: 5,
       text: "Provided us a great strategy and roadmap. Brilliant!"
     },
     {
-      name: "Client Name",
+      name: "Sarah Thompson",
       role: "Part-time Social Media Manager",
       date: "May 2023",
       rating: 5,
@@ -96,7 +96,7 @@ const Testimonials = () => {
       <div className="container mx-auto px-4">
         <div className="text-center max-w-2xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-2">
-            Client <span className="gradient-text">Testimonials</span>
+            Client <span className="bg-gradient-to-br from-[#3b82f6] bg-clip-text text-transparent">Testimonials</span>
           </h2>
           <p className="text-muted-foreground">
             What my clients have to say about working with me

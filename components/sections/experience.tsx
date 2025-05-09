@@ -81,7 +81,7 @@ const Experience = () => {
       <div className="container mx-auto px-4">
         <div className="text-center max-w-2xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-2">
-            Work <span className="gradient-text">History</span>
+            Work <span className="bg-gradient-to-br from-[#3b82f6] bg-clip-text text-transparent">History</span>
           </h2>
           <p className="text-muted-foreground">
             My professional journey and client engagements
@@ -99,7 +99,7 @@ const Experience = () => {
 
           {workHistory.map((job, index) => (
             <motion.div key={index} variants={itemVariants} className="mb-12 pl-12 relative timeline-item">
-              <div className="absolute left-0 top-0 w-12 h-12 rounded-full gradient-bg flex items-center justify-center z-10">
+              <div className="absolute left-0 top-0 w-12 h-12 rounded-full bg-gradient-to-br from-[#3b82f6] to-[#0fb3ad] text-white border-0 shadow-lg hover:from-[#2563eb] hover:to-[#0ea5e9] flex items-center justify-center z-10">
                 <CalendarIcon className="h-6 w-6 text-white" />
               </div>
               
